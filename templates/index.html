@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Puskesmas Muara Jawa</title>
+{% endblock %}
+
+{% block body %}
+
+<div class="container-contact100">
+	<div class="wrap-contact100">
+		<form class="contact-form validate-form" action="/" method="POST">
+			<span class="contact100-form-title"> 
+				Klasifikasi Status Gizi Balita !
+			</span>
+
+			<div class="wrap-input100 validate-input">
+				<span class="label-input100">Umur</span>
+				<input class="input100" type="text" placeholder="Masukkan Umur" name="umur" id="umur" required>
+				<span class="focus-input100"></span>
+			</div>
+
+			<div class="wrap-input100 validate-input">
+				<span class="label-input100">Berat Badan</span>
+				<input class="input100" type="text" placeholder="Masukkan Berat Badan" name="berat" id="berat" required>
+				<span class="focus-input100"></span>
+			</div>
+
+			<div class="wrap-input100 validate-input">
+				<span class="label-input100">Tinggi Badan</span>
+				<input class="input100" type="text" placeholder="Masukkan Tinggi Badan" name="tinggi" id="tinggi" required>
+				<span class="focus-input100"></span>
+			</div>
+
+			<div class="container-contact100-form-btn">
+				<div class="wrap-contact100-form-btn">
+					<div class="contact100-form-bgbtn"></div>
+					<button class="contact100-form-btn">
+						<span>
+							Prediksi
+							<i class="fa fa-long-arrow-right m-1-7" aria-hidden="true"></i>
+						</span>
+					</button>
+					
+				</div>
+			</div>
+			
+		</form>
+
+	</div>
+</div>
+
+{% endblock %}

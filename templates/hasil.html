@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Puskesmas Muara Jawa</title>
+{% endblock %}
+
+{% block body %}
+
+<div class="container-contact100">
+	<div class="wrap-contact100">
+		<form class="contact100-form validate-form" action="/" method="GET">
+			{% if finalData == "Gizi Buruk" %}
+			<span class="contact100-form-title">
+				Gizi Buruk
+			</span>
+
+			{% elif finalData == "Gizi Kurang" %}
+			<span class="contact100-form-title">
+				Gizi Kurang
+			</span>
+
+			{% elif finalData == "Gizi Lebih" %}
+			<span class="contact100-form-title">
+				Gizi Lebih
+			</span>
+
+			{% elif finalData == "Normal" %}
+			<span class="contact100-form-title">
+				Normal
+			</span>
+
+			{% else %}
+
+			{% endif %}
+
+			<div class="container-contact100-form-btn">
+				<div class="wrap-contact100-form-btn">
+					<div class="contact100-form-bgbtn"></div>
+					<button class="contact100-form-btn">
+						<span>
+							Selesai
+						</span>
+					</button>
+				</div>
+			</div>
+			
+		</form>
+	</div>
+</div>
+
+{% endblock %}
